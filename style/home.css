@@ -1,0 +1,217 @@
+:root{
+    --primary-color: #ff1100;
+    --text-color: #EEE;
+    --bg-color: #000;
+}
+/*00E676*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+    font-family: Roboto;
+}
+
+/*Classes básicas*/
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.content{
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 10px;
+    
+}
+
+/*Header*/
+header{
+    height: 70px;
+    background-color: #000;
+    color: #FFF;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #000;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo h3{
+    color: #FFF;
+    font-size: 20px;
+}
+
+.menuBar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menuBar li{
+    transition: all 0.3s;
+}
+
+.menuBar li:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
+.menuBar li a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.menuBar li .button{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    color: #000;
+}
+
+.iconMobile{
+    height: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.iconMobile div{
+    height: 8px;
+    width: 50px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.tema{
+    width: 25px;
+    height: 25px;
+    background-image: url(../images/tema.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*Hero*/
+.hero{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.hero-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 10px;
+}
+
+.hero-content .text{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.text h1{
+    font-size: 4rem;
+}
+
+.text h2 span{
+    background-color: var(--primary-color);
+    padding: 0 10px;
+    color: var(--bg-color);
+    border-radius: 5px;
+}
+
+.text h1 span{
+    color: var(--primary-color);
+}
+
+.text p{
+    text-align: justify;
+    padding: 20px;
+    border-left: 5px solid var(--primary-color);
+    font-size: 18px;
+}
+
+.text p span{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.heroImage img{
+    width: 90%;
+    max-width: 700px;
+    min-width: 330px;
+}
+
+@media (max-width: 500px) {
+    .iconMobile{
+        display: flex;
+    }
+
+    header{
+        position: relative;
+    }
+
+    .menuBar{
+        display: none;
+    }
+    
+    #Menu:checked ~ .menuBar{
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 70px;
+        flex-direction: column;
+        width: 50vw;
+        min-width: 150px;
+        height: calc(100vh - 70px);
+        justify-content: center;
+        background-color: #000;
+    }
+    .text h1{
+        font-size: 3rem;
+    }
+    .text p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 700px){
+    .hero-content{
+        flex-direction: column;
+    }
+    .text{
+        text-align: center;
+    }
+}
