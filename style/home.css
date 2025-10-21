@@ -1,5 +1,5 @@
 :root{
-    --primary-color: #ff1100;
+    --primary-color: #6060e6;
     --text-color: #EEE;
     --bg-color: #000;
 }
@@ -10,6 +10,10 @@
     margin: 0;
     box-sizing: content-box;
     font-family: Roboto;
+}
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
 }
 
 /*Classes básicas*/
@@ -28,6 +32,8 @@
 
 /*Header*/
 header{
+    position: fixed;
+    top: 0;
     height: 70px;
     background-color: #000;
     color: #FFF;
@@ -121,8 +127,15 @@ header{
     background-position: center;
 }
 
+.transparente {
+    background-color: rgba(3, 3, 3, 0.459);
+    box-shadow: none;
+    backdrop-filter: blur(5px); 
+}
+
 /*Hero*/
 .hero{
+    margin-top: 70px;
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -174,21 +187,77 @@ header{
     min-width: 330px;
 }
 
+/*Como funciona*/
+.como-funciona {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #eee;
+}
+
+.como-funciona h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.como-funciona .intro {
+    color: #000;
+    max-width: 600px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+}
+
+.passos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.passo {
+    cursor: pointer;
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 200px;
+}
+
+.passo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.passo img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.passo h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.passo p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
 @media (max-width: 500px) {
     .iconMobile{
         display: flex;
     }
 
     header{
-        position: relative;
+        position: fixed;
     }
-
+   
     .menuBar{
         display: none;
-    }
-    
-    #Menu:checked ~ .menuBar{
-        display: flex;
         position: absolute;
         right: 0;
         top: 70px;
@@ -198,6 +267,17 @@ header{
         height: calc(100vh - 70px);
         justify-content: center;
         background-color: #000;
+    }
+
+    .transparente {
+        background-color: rgba(3, 3, 3, 0.459); /* transparente */
+        box-shadow: none;
+        backdrop-filter: blur(5px); /* opcional: efeito vidro */
+    }
+
+    #Menu:checked ~ .menuBar{
+        display: flex;
+        
     }
     .text h1{
         font-size: 3rem;

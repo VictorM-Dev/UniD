@@ -1,0 +1,39 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title4">
+    <title id="title4">Avaliação e feedback</title>
+    <defs>
+        <linearGradient id="g5" x1="0" x2="1">
+            <stop offset="0%" stop-color="#8fe0ff" />
+            <stop offset="100%" stop-color="#7be5a7" />
+        </linearGradient>
+    </defs>
+
+
+    <rect x="8" y="16" width="224" height="208" rx="22" fill="#f5fffb" />
+
+
+    <!-- cartão de avaliação -->
+    <rect x="36" y="44" width="168" height="118" rx="12" fill="#fff" stroke="#eefef8" />
+
+
+    <!-- estrelas -->
+    <g transform="translate(60,80)">
+        <polygon points="10,0 12.8,7 20.5,7 14.1,11.4 16,18 10,14 4,18 5.9,11.4 -0.5,7 7.2,7" fill="#ffd166" />
+        <polygon points="40,0 42.8,7 50.5,7 44.1,11.4 46,18 40,14 34,18 35.9,11.4 29.5,7 37.2,7" fill="#ffd166" />
+        <polygon points="70,0 72.8,7 80.5,7 74.1,11.4 76,18 70,14 64,18 65.9,11.4 59.5,7 67.2,7" fill="#ffd166" />
+    </g>
+
+
+    <!-- balão de comentário -->
+    <g transform="translate(56,124)">
+        <rect x="0" y="0" width="112" height="36" rx="6" fill="#f6fffb" stroke="#e6f9ef" />
+        <circle cx="12" cy="18" r="8" fill="#8fe0ff" />
+        <rect x="28" y="8" width="72" height="8" rx="4" fill="#eafaf4" />
+    </g>
+
+
+    <!-- botão enviar -->
+    <rect x="148" y="170" width="56" height="28" rx="8" fill="url(#g5)" />
+    <text x="176" y="189" font-size="11" text-anchor="middle" fill="#fff" font-weight="700">Enviar</text>
+
+
+</svg>

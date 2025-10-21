@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/home.css"> 
+
+    <!--Importação da fonte Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <title>UniD</title>
+</head>
+<body>
+    <header class="container" id="header">
+        <div class="header-content content">
+            <div class="logo">
+                <h1 class="icon">U</h1>
+                <h3>UniD</h3>
+            </div>
+            
+            <label for="Menu" class="iconMobile">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <input type="checkbox" id="Menu" hidden/>
+        
+            <ul class="menuBar" id="menuBar">
+                <li><div class="tema" id="tema"></div></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#como-funciona">Como funciona?</a></li>
+                <li><a class="button">Entrar</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <section class="hero container" id="home">
+        <div class="hero-content content">
+            <div class="text">
+                <h1><span>UniD</span> - A rede social do <span>universitário</span></h1>
+                <h2>Encontre o <span>TUTOR PERFEITO</span> para você!</h2>
+                <p>Uma plataforma colaborativa, acessível e segura, onde 
+                    o conhecimento circula de <span>estudante para estudante</span>, transformando 
+                    dificuldades em <span>oportunidades</span> de aprendizado e <span>renda</span></p>
+            </div>
+            <div class="heroImage">
+                <img src="./images/banner_red.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="como-funciona container">
+        <div class="content">
+            <h2>Como funciona a UniD?</h2>
+            <p class="intro">
+                A UniD conecta estudantes que precisam de ajuda com colegas que dominam o conteúdo.
+                Tudo de forma prática, segura e acessível.
+            </p>
+
+            <div class="passos">
+                <div class="passo">
+                <img src="./images/svgs/cadastroDeEstudante.svg" alt="Cadastro de estudante">
+                <h3>1. Cadastre-se</h3>
+                <p>Crie seu perfil como aluno ou tutor. Informe seu curso, universidade e áreas de interesse.</p>
+                </div>
+
+                <div class="passo">
+                <img src="./images/svgs/buscaPorAulas.svg" alt="Busca por aulas">
+                <h3>2. Encontre ou ofereça aulas</h3>
+                <p>Busque por disciplinas específicas ou publique sua própria aula para ensinar outros estudantes.</p>
+                </div>
+
+                <div class="passo">
+                <img src="./images/svgs/agendamentoDeAulas.svg" alt="Agendamento de aulas">
+                <h3>3. Combine e aprenda</h3>
+                <p>Agende o horário que for melhor para ambos. O pagamento é feito pela plataforma, com total segurança.</p>
+                </div>
+
+                <div class="passo">
+                <img src="./images/svgs/feedbackDeTutoria.svg" alt="Feedback de tutoria">
+                <h3>4. Avalie e melhore</h3>
+                <p>Após a aula, avalie seu tutor ou aluno. Assim, a comunidade cresce com qualidade e confiança.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script/script.js"></script>
+</body>
+</html>

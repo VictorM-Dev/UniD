@@ -1,0 +1,42 @@
+<svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title2">
+    <title id="title2">Busca por aulas</title>
+    <defs>
+        <linearGradient id="g3" x1="0" x2="1">
+            <stop offset="0%" stop-color="#7be5a7" />
+            <stop offset="100%" stop-color="#4db6e6" />
+        </linearGradient>
+    </defs>
+
+
+    <rect x="8" y="16" width="224" height="208" rx="22" fill="#f0fff6" />
+
+
+    <!-- search box -->
+    <rect x="36" y="46" width="168" height="38" rx="10" fill="#fff" stroke="#e7f6ef" />
+    <text x="56" y="72" fill="#9bbba6" font-size="12" font-family="sans-serif">Buscar</text>
+
+
+    <!-- lista de cartões -->
+    <g transform="translate(36,98)">
+        <rect x="0" y="0" width="168" height="34" rx="8" fill="#ffffff" stroke="#f0fbf5" />
+        <circle cx="18" cy="17" r="10" fill="#7be5a7" />
+        <rect x="36" y="6" width="110" height="10" rx="4" fill="#e6f6ec" />
+    </g>
+
+
+    <g transform="translate(36,138)">
+        <rect x="0" y="0" width="168" height="34" rx="8" fill="#ffffff" stroke="#f0fbf5" />
+        <circle cx="18" cy="17" r="10" fill="#4db6e6" />
+        <rect x="36" y="6" width="80" height="10" rx="4" fill="#e6f6ec" />
+    </g>
+
+
+    <!-- lupa decorativa -->
+    <g transform="translate(170,70) rotate(20)">
+        <circle cx="0" cy="0" r="18" fill="#fff" stroke="#cfeef8" stroke-width="6" />
+        <circle cx="0" cy="0" r="10" fill="#4db6e6" />
+        <rect x="14" y="14" width="26" height="8" rx="4" fill="#cfeef8" transform="rotate(35)" />
+    </g>
+
+
+</svg>
