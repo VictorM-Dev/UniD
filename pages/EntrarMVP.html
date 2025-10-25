@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - UniD (Simulação)</title>
+    <link href="../style/cadastro.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="icon" id="temaBtn">U</h1>
+        <p>Simulação de como seria a página real de loggin.</p>
+
+        <form id="cadastroForm">
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" value="unid@unid.com" id="email" placeholder="exemplo@email.com">
+                <div class="erro" id="erroEmail"></div>
+            </div>
+
+            <div>
+                <label for="senha">Senha</label>
+                <input type="password" value="unidteste" id="senha" placeholder="********">
+                <div class="erro" id="erroSenha"></div>
+            </div>
+
+            <button type="submit">Entrar</button>
+            <button type="button" class="voltar" onclick="window.location.href='../index.html'">Voltar</button>
+        </form>
+    </div>
+
+    <script src="../script/loggin.js"></script>
+</body>
+
+</html>
