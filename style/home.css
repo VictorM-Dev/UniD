@@ -11,10 +11,16 @@
     box-sizing: content-box;
     font-family: Roboto;
 }
+
+body.light {
+    --text-color: #000;
+    --bg-color: #FFF;
+}
+
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 70px;
-    background-color: var(--bg-color);
+    background-color: #EEE;
 }
 
 /*Classes básicas*/
@@ -70,6 +76,12 @@ header{
     border-radius: 10px;
     font-size: 25px;
     color: #000;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s all ease;
 }
 
 .logo{
