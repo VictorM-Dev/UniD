@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="../style/perfil.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="../images/profile.png" alt="Foto de Perfil" class="profile-pic">
+                <h2 class="profile-name">João Victor</h2>
+                <p class="profile-course">Ciência da Computação</p>
+                <p class="profile-location">Patos - PB</p>
+                <div class="profile-rating">
+                    <span>4.5</span> (3 avaliações)
+                </div>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#" data-menu="dashboard" class="active">Dashboard</a></li>
+                    <li><a href="#" data-menu="reviews">Avaliações</a></li>
+                    <li><a href="#" data-menu="enrollments">Minhas Inscrições</a></li>
+                    <li>
+                        <div class="theme-toggle">
+                            <input type="checkbox" id="theme-switch">
+                            <label for="theme-switch" class="toggle-label"></label>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div class="next-class">
+                <h3>Próxima Aula</h3>
+                <div id="next-class-card" class="class-card"></div>
+            </div>
+        </aside>
+        <main class="main-content">
+            <section id="dashboard-section" class="menu-content active">
+                <div class="tabs">
+                    <button class="tab active" data-tab="student">Aluno</button>
+                    <button class="tab" data-tab="tutor">Tutor</button>
+                </div>
+                <section id="student-tab" class="tab-content active">
+                    <div class="search-bar">
+                        <input type="text" id="search" placeholder="Buscar aulas...">
+                        <select id="sort-day">
+                            <option value="all">Todos os Dias</option>
+                            <option value="Domingo">Domingo</option>
+                            <option value="Segunda">Segunda</option>
+                            <option value="Terça">Terça</option>
+                            <option value="Quarta">Quarta</option>
+                            <option value="Quinta">Quinta</option>
+                            <option value="Sexta">Sexta</option>
+                            <option value="Sábado">Sábado</option>
+                        </select>
+                    </div>
+                    <div id="classes-list" class="classes-grid"></div>
+                </section>
+                <section id="tutor-tab" class="tab-content">
+                    <div class="search-bar">
+                        <input type="text" id="registered-search" placeholder="Buscar aulas cadastradas...">
+                        <button class="open-modal">Cadastrar Aula</button>
+                    </div>
+                    <h2>Aulas Cadastradas</h2>
+                    <div id="registered-classes-list" class="registered-classes"></div>
+                </section>
+            </section>
+            <section id="reviews-section" class="menu-content">
+                <h2>Avaliações</h2>
+                <div id="reviews-list"></div>
+            </section>
+            <section id="enrollments-section" class="menu-content">
+                <h2>Minhas Inscrições</h2>
+                <div id="enrollments-list" class="classes-grid"></div>
+            </section>
+        </main>
+        <div id="class-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h2>Cadastrar Aula</h2>
+                <form id="class-form">
+                    <div class="form-group">
+                        <label for="class-name">Nome da Aula</label>
+                        <input type="text" id="class-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class-price">Preço (R$)</label>
+                        <input type="number" id="class-price" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class-date">Data</label>
+                        <input type="date" id="class-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class-time">Horário</label>
+                        <input type="time" id="class-time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class-platform">Plataforma</label>
+                        <input type="text" id="class-platform" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="class-slots">Vagas</label>
+                        <input type="number" id="class-slots" min="1" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Cadastrar Aula</button>
+                </form>
+            </div>
+        </div>
+        <div id="notification" class="notification"></div>
+    </div>
+    <script src="../script/perfil.js"></script>
+</body>
+</html>

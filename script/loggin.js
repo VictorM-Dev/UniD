@@ -32,7 +32,7 @@ form.addEventListener("submit", (e) => {
 
     // Verificação de login
     if(email === "unid@unid.com" && senha === "unidteste"){
-        window.location.href = "../index.html";
+        window.location.href = "../pages/PerfilMVP.html";
     } else {
         mostrarErro("erroSenha", "E-mail ou senha incorretos");
     }
