@@ -333,6 +333,22 @@ section.ensinar img {
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
 
+.footer{
+    background-color: #000;
+    height: 50px;
+}
+
+.footer div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer div p{
+    color: #eee;
+    font-size: 10px;
+}
 
 @media (max-width: 500px) {
     .iconMobile{
